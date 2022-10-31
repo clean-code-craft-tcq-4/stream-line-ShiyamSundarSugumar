@@ -8,7 +8,7 @@ def StreamLineformat_console_pipeline():
     print(data)
     if(data != []):
         def filterFunc(data):
-            if(data == [Temperature,SOC]\n):
+            if(data == '[Temperature,SOC]\n'):
                 return true
             else:
                 return false
