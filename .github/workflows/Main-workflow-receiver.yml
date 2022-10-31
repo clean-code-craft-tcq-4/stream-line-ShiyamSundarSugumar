@@ -28,7 +28,7 @@ jobs:
           flake8 . --count --exit-zero --max-line-length=80 --ignore=E111,E121,E126 --statistics
       - name: Run test and collect coverage - Sender
         run: |
-          coverage run --branch test_StreamLineSender.py
+          coverage run --branch receiver/test_StreamLine_Receiver.py
           coverage html
           coverage report
       - name: Upload coverage
