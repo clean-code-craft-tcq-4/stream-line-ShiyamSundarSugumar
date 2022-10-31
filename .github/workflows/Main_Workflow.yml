@@ -32,5 +32,4 @@ jobs:
     - name: Run tests
       run: dotnet test
       
-    - name: Run the app
-      run: dotnet run -p Streamline_Sender 
+
