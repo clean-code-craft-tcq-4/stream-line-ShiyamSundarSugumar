@@ -25,6 +25,21 @@ jobs:
           flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
           # exit-zero treats all errors as warnings.
           flake8 . --count --exit-zero --max-line-length=80 --ignore=E111,E121,E126 --statistics
+      
+            # Install the .NET Core workload
+      - name: Install .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.101
+          
+          # Run the app
+      - name: Run the App
+        run: dotnet run -p Streamline_Sender 
+        
+      - name: Run BMS Data Streamer
+        run: dotnet run --project Streamline_Sender_TestCase/Streamline_Sender_TestCase.csproj
+        
+        
       - name: Run test and collect coverage - Sender
         run: |
           coverage run --branch receiver/test_StreamLine_Receiver.py
@@ -47,15 +62,3 @@ jobs:
             name: coverage
             path: ./htmlcov
             retention-days: 21
-            # Install the .NET Core workload
-      - name: Install .NET Core
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 3.1.101
-          
-          # Run the app
-      - name: Run the App
-        run: dotnet run -p Streamline_Sender 
-        
-      - name: Run BMS Data Streamer
-        run: dotnet run --project Streamline_Sender_TestCase/Streamline_Sender_TestCase.csproj
