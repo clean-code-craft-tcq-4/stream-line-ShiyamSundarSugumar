@@ -54,4 +54,4 @@ jobs:
       with:
         dotnet-version: 3.1.101
       - name: Run BMS Data Streamer
-          run: dotnet run --project .\Streamline_Sender_TestCase.csproj | python receiver/test_StreamLine_receiver.py
+          run: dotnet run --project .\Streamline_Sender_TestCase.csproj | python receiver/test_StreamLine_Receiver.py
