@@ -33,4 +33,4 @@ jobs:
       run: dotnet test
       
     - name: Run the app
-      run: dotnet run -p Streamline_Sender.sln 
+      run: dotnet run -p Streamline_Sender 
