@@ -48,5 +48,10 @@ jobs:
             name: coverage
             path: ./htmlcov
             retention-days: 21
+            # Install the .NET Core workload
+    - name: Install .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.101
       - name: Run BMS Data Streamer
           run: dotnet run --project .\Streamline_Sender_TestCase.csproj | python receiver/test_StreamLine_receiver.py
