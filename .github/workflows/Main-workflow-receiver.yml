@@ -40,7 +40,7 @@ jobs:
           
           # Run the app
       - name: Run the App
-        run: dotnet run -p Streamline_Sender 
+        run: dotnet test 
         
       - name: Run BMS Data Streamer
         run: dotnet run --project Streamline_Sender_TestCase/Streamline_Sender_TestCase.csproj
