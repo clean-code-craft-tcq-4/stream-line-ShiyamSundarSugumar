@@ -7,7 +7,14 @@ def StreamLineformat_console_pipeline():
     input_data = ''
     print(data)
     if(data != []):
-    
+        def filterFunc(data):
+            if(data == [Temperature,SOC]\n):
+                return true
+            else:
+                return false
+        Streamdata = filter(filterFunc, data)
+        for x in Streamdata:
+            print(x)
         #get the streaming data from dotnet console output in the pipeline
         for line in data:
             if '[Temperature,SOC]\n' in line:
