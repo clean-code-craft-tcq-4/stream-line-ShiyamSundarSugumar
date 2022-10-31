@@ -5,7 +5,7 @@ import pandas as pd
 def StreamLineformat_console_pipeline():
     data = sys.stdin.readlines()
     input_data = ''
-    #print(data)
+    print(data)
     if(data != []):
     
         #get the streaming data from dotnet console output in the pipeline
