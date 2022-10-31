@@ -24,6 +24,7 @@ def displayOutput(StreamLine_data):
         print('Max SOC:', StreamLineReceiver_max(StreamLineReceiver_soc_list))
         print('Min SOC:', StreamLineReceiver_min(StreamLineReceiver_soc_list))
         print('Moving average of last five values of chargeRate:', StreamLineReceiver_moving_average_last_5(StreamLineReceiver_soc_list))
+    return 'Success'
 
 # returns moving average of last 5 values in bms parameter list
 def StreamLineReceiver_moving_average_last_5(StreamLine_data):
