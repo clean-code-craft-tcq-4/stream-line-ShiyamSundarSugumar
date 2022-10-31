@@ -17,8 +17,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8
           pip install coverage
-          pip install numpy
-          pip install click
           pip install pandas
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Lint with flake8
@@ -55,4 +53,4 @@ jobs:
         with:
           dotnet-version: 3.1.101
       - name: Run BMS Data Streamer
-        run: dotnet run --project .\Streamline_Sender_TestCase.csproj | python receiver/test_StreamLine_Receiver.py
+        run: dotnet run --project .\Streamline_Sender_TestCase.csproj 
