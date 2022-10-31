@@ -40,10 +40,8 @@ jobs:
           
           # Run the app
       - name: Run the App
-        run: dotnet test 
+        run: dotnet test | python receiver/test_StreamLine_Receiver.py
         
-      - name: Run BMS Data Streamer
-        run: dotnet run --project Streamline_Sender_TestCase/Streamline_Sender_TestCase.csproj
         
         
       - name: Run test and collect coverage - Sender
