@@ -22,5 +22,5 @@ def StreamLineformat_console_pipeline():
             StreamLineReceiver_temperature_list = StreamLine_dataframe['temperature'].values.tolist()
             StreamLineReceiver_soc_list = StreamLine_dataframe['soc'].values.tolist()
             return [StreamLineReceiver_temperature_list,StreamLineReceiver_soc_list]
-       else:
+    else:
         return None
