@@ -9,9 +9,9 @@ def StreamLineformat_console_pipeline():
     if(data != []):
         def filterFunc(data):
             if(data == '[Temperature,SOC]\n'):
-                return true
+                return True
             else:
-                return false
+                return False
         Streamdata = filter(filterFunc, data)
         for x in Streamdata:
             print(x)
