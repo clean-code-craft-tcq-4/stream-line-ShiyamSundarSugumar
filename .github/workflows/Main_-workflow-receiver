@@ -49,4 +49,4 @@ jobs:
             path: ./htmlcov
             retention-days: 21
       - name: Run BMS Data Streamer
-          run: dotnet run --project .\ | python receiver/test_StreamLine_receiver.py
+          run: dotnet run --project .\Streamline_Sender_TestCase.csproj | python receiver/test_StreamLine_receiver.py
