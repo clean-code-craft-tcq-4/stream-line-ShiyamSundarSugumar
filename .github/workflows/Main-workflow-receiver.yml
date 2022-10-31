@@ -26,6 +26,12 @@ jobs:
           # exit-zero treats all errors as warnings.
           flake8 . --count --exit-zero --max-line-length=80 --ignore=E111,E121,E126 --statistics
       
+      
+        env:
+           Solution_Name: Streamline_Sender.sln
+           Test_Project_Path: Streamline_Sender_TestCase\Streamline_Sender_TestCase.csproj                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
+
+      
             # Install the .NET Core workload
       - name: Install .NET Core
         uses: actions/setup-dotnet@v1
