@@ -1,4 +1,4 @@
-name: TDD 
+name: Sender_Coverage 
 
 on: [push, pull_request]
 
