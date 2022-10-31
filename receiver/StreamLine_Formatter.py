@@ -10,7 +10,7 @@ def StreamLineformat_console_pipeline():
     
         #get the streaming data from dotnet console output in the pipeline
         for line in data:
-            if '[Temperature,soc]' in line:
+            if '[Temperature,SOC]' in line:
                 input_data = line
 
         #convert StreamLine data string to list of dictionaries
