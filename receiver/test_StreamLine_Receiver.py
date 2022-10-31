@@ -31,9 +31,7 @@ class test_StreamLine_receiver(unittest.TestCase):
         self.assertTrue(StreamLineReceiver_moving_average == 5.8)
         
     def test_StreamLineReceiver_statistics_reporting(self):
-        StreamLine_Reporter.displayOutput(StreamLineformat_console_pipeline())
+        self.assertTrue(StreamLine_Reporter.displayOutput(StreamLineformat_console_pipeline()) == 'Success')
         
-
-
 if __name__ == '__main__':
     unittest.main()
