@@ -7,7 +7,7 @@ def StreamLineformat_console_pipeline():
     input_data = ''
     print(data)
     if(data != []):
-        def findIndex():
+        def findIndex(data):
             dataIndexOfTemperature = data.index('[Temperature,SOC]\n')
             print(dataIndexOfTemperature)
         def filterFunc(data):
