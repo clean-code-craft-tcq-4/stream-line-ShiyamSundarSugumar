@@ -40,7 +40,7 @@ jobs:
           
           # Run the app
       - name: Run the App
-        run: dotnet test | python receiver/test_StreamLine_Receiver.py
+        run: dotnet test | python receiver/StreamLine_Reporter.py
         
         
         
