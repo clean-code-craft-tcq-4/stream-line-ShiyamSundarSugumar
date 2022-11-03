@@ -5,7 +5,7 @@ import re
 
 def StreamLineformat_console_pipeline():
     i=0
-    data_1 = " "
+    data_1 = []
     while(i<50):
         data_1.append(input())
         i+=1
