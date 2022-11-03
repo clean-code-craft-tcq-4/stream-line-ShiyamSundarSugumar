@@ -13,7 +13,7 @@ def StreamLineformat_console_pipeline():
     print(data_1)
     data = sys.stdin.readlines()
     input_data = ''
-    print(data)
+    #print(data)
     if(data != []):
         def findIndex(data):
             dataIndexOfTemperature = data.index('[Temperature,SOC]\n')
