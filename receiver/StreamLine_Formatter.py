@@ -12,6 +12,25 @@ def StreamLineformat_console_pipeline():
 
     print(data_1)
     print(" Summa \n ")
+    data_2 = data_1[27:76]
+    i=0
+    Temp_data = []
+    SOC_data = []
+    while(i<50):
+        temp = data_2[i].split(",")
+        Temp_data.append(int(temp[0]))
+        SOC_data.append(int(temp[1]))
+        
+        
+        
+    print(Temp_data)
+    print(SOC_data)
+    
+    
+    
+    
+    
+    
     data = sys.stdin.readlines()
     input_data = ''
     #print(data)
