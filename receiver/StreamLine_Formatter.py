@@ -21,7 +21,8 @@ def StreamLineformat_console_pipeline():
         StreamLineReceiver_temperature_list.append(int(temp[0]))
         StreamLineReceiver_soc_list.append(int(temp[1]))
         i+=1    
-   
+    print(StreamLineReceiver_temperature_list)
+    print(StreamLineReceiver_soc_list)
     return [StreamLineReceiver_temperature_list,StreamLineReceiver_soc_list]
 
     
