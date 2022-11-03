@@ -6,17 +6,17 @@ import re
 def StreamLineformat_console_pipeline():
     i=0
     data_1 = []
-    while(i<76):
+    while(i<77):
         data_1.append(input())
         i+=1
 
     print(data_1)
     print(" Summa \n ")
-    data_2 = data_1[27:76]
+    data_2 = data_1[27:77]
     i=0
     Temp_data = []
     SOC_data = []
-    while(i<49):
+    while(i<50):
         temp = data_2[i].split(",")
         Temp_data.append(int(temp[0]))
         SOC_data.append(int(temp[1]))
