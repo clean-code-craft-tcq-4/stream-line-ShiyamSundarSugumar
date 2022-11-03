@@ -14,8 +14,8 @@ def StreamLineformat_console_pipeline():
     print(" Summa \n ")
     data_2 = data_1[27:77]
     i=0
-    Temp_data = []
-    SOC_data = []
+    StreamLineReceiver_temperature_list = []
+    StreamLineReceiver_soc_list = []
     while(i<50):
         temp = data_2[i].split(",")
         StreamLineReceiver_temperature_list.append(int(temp[0]))
@@ -24,5 +24,4 @@ def StreamLineformat_console_pipeline():
    
     return [StreamLineReceiver_temperature_list,StreamLineReceiver_soc_list]
 
-    else:
-        return None
+    
