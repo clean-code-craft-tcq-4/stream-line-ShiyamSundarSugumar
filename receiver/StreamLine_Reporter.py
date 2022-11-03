@@ -1,3 +1,5 @@
+from StreamLine_Formatter import StreamLineformat_console_pipeline
+
 # returns minimum value from list of StreamLine data parameter
 def StreamLineReceiver_min(StreamLine_data):
     if len(StreamLine_data) !=0:
@@ -33,3 +35,10 @@ def StreamLineReceiver_moving_average_last_5(StreamLine_data):
         moving_average = round((sum(StreamLine_data[-5:])/5),3)
         return moving_average
     return "Data Insufficent"
+
+def Pipeline_Data_Check():
+    displayOutput(StreamLineformat_console_pipeline())
+    
+    
+if __name__ == '__main__':
+    Pipeline_Data_Check()
