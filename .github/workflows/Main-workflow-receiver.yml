@@ -40,11 +40,10 @@ jobs:
           
           # Run the app
       - name: Run the App
-        run: dotnet test | python receiver/StreamLine_Reporter.py
+        run: dotnet test | python receiver/StreamLine_Reporter.py       
         
         
-        
-      - name: Run test and collect coverage - Sender
+      - name: Run test and collect coverage - Receiver
         run: |
           coverage run --branch receiver/test_StreamLine_Receiver.py
           coverage html
@@ -55,14 +54,4 @@ jobs:
           name: coverage
           path: ./htmlcov
           retention-days: 21
-      - name: Run test and collect coverage - Receiver
-        run: |
-            coverage run --branch --source receiver -m unittest discover
-            coverage html
-            coverage report
-      - name: Upload coverage - Receiver
-        uses: actions/upload-artifact@v2
-        with:
-            name: coverage
-            path: ./htmlcov
-            retention-days: 21
+      
