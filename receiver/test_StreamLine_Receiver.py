@@ -32,6 +32,7 @@ class test_StreamLine_receiver(unittest.TestCase):
         
     # test if StreamLineReceiver statistics report is printed successfully      
     def test_StreamLineReceiver_statistics_reporting(self):
+        data = ["65,25","55,25"]
         self.assertTrue(StreamLine_Reporter.displayOutput(StreamLineformat_console_pipeline()) == 'Success')
         
 if __name__ == '__main__':
