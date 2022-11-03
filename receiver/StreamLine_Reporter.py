@@ -37,7 +37,7 @@ def StreamLineReceiver_moving_average_last_5(StreamLine_data):
     return "Data Insufficent"
 
 def Pipeline_Data_Check():
-    displayOutput(StreamLineformat_console_pipeline())
+    displayOutput(StreamLineformat_console_pipeline(Read_from_console))
     
     
 if __name__ == '__main__':
