@@ -20,6 +20,7 @@ def StreamLineformat_console_pipeline():
         temp = data_2[i].split(",")
         Temp_data.append(int(temp[0]))
         SOC_data.append(int(temp[1]))
+        i+=1
         
         
         
