@@ -17,6 +17,13 @@ class dataFormatter
         return formattedData
 
     def StreamLineformat_console_pipeline():
+        i=0
+        data_1 = " "
+        while(i<50):
+            data_1.append(input())
+            i+=1
+            
+        print(data_1)
         data = sys.stdin.readlines()
         input_data = ''
         print(data)
