@@ -1,7 +1,5 @@
 import sys
-import ast
 import pandas as pd
-import re
 
 def StreamLineformat_console_pipeline():
     i=0
@@ -10,8 +8,7 @@ def StreamLineformat_console_pipeline():
         data_1.append(input())
         i+=1
 
-    print(data_1)
-    print(" Summa \n ")
+    print(data_1)   
     data_2 = data_1[27:77]
     i=0
     StreamLineReceiver_temperature_list = []
