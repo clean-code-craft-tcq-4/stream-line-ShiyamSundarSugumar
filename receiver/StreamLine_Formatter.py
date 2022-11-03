@@ -11,6 +11,7 @@ def StreamLineformat_console_pipeline():
             dataIndexOfTemperature = data.index('[Temperature,SOC]\n')
             print(dataIndexOfTemperature)
         IndexOfTemperature = findIndex(data)
+        
         def filterFunc(data):
             if(data == '[Temperature,SOC]\n'):
                 return True
