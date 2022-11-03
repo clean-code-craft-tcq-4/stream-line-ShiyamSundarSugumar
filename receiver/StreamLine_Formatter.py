@@ -16,7 +16,7 @@ def StreamLineformat_console_pipeline(data):
     i=0
     StreamLineReceiver_temperature_list = []
     StreamLineReceiver_soc_list = []
-    while(i<50):
+    while(i<len(data)):
         temp = data[i].split(",")
         StreamLineReceiver_temperature_list.append(int(temp[0]))
         StreamLineReceiver_soc_list.append(int(temp[1]))
