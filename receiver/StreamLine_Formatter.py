@@ -6,11 +6,12 @@ import re
 def StreamLineformat_console_pipeline():
     i=0
     data_1 = []
-    while(i<50):
+    while(i<76):
         data_1.append(input())
         i+=1
 
     print(data_1)
+    print(" Summa \n ")
     data = sys.stdin.readlines()
     input_data = ''
     #print(data)
