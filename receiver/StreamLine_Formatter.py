@@ -8,6 +8,10 @@ def Read_from_console():
         i+=1
     FormattedStreamLinedata = StreamLinedata[27:77]
     '''
+    dataIndexOfTemperature = (data).index('[Temperature,SOC]\n')
+    lastdata = len(data)
+    FormattedStreamLinedata = data[dataIndexOfTemperature:lastdata-1]
+    print(FormattedStreamLinedata)
     return FormattedStreamLinedata
     
 
