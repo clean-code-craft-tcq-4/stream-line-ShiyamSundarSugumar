@@ -34,7 +34,7 @@ class test_StreamLine_receiver(unittest.TestCase):
     def test_StreamLineReceiver_statistics_reporting(self):
         test_data1 = ["65,25","55,25", "45,67"]
         test_data2 = ["56,30", "46,70", "67,39", "65,48", "28,76"]
-        self.assertTrue(StreamLine_Reporter.displayOutput(StreamLineformat_console_pipeline(test_data1)) == 'Success')_
+        self.assertTrue(StreamLine_Reporter.displayOutput(StreamLineformat_console_pipeline(test_data1)) == 'Success')
         self.assertTrue(StreamLine_Reporter.displayOutput(StreamLineformat_console_pipeline(test_data2)) == 'Success')
         
 if __name__ == '__main__':
