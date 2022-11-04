@@ -40,9 +40,6 @@ def StreamLineReceiver_moving_average_last_5(StreamLine_data):
 def Pipeline_Data_Check():
     displayOutput(StreamLine_Formatter.StreamLineformat_console_pipeline(StreamLine_Formatter.Read_from_console()))
     
-def Pipeline_Data_Check_std():
-    displayOutput(StreamLine_Formatter.StreamLineformat_console_pipeline(StreamLine_Formatter.bms_format_console_pipeline()))
- 
 def PrintOnConsole(PrintData1,PrintData2):
     print(PrintData1,PrintData2)
     
