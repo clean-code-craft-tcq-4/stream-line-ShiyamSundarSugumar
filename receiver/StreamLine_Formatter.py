@@ -4,17 +4,18 @@ def Read_from_console():
     i=0
     data = []
     data = sys.stdin.readlines()
-    print(data)
-    '''
-    while(i<77):
-        StreamLinedata.append(input())
-        i+=1
-    FormattedStreamLinedata = StreamLinedata[27:77]
-    '''
     dataIndexOfTemperature = (data).index('Temperature,SOC\n')
     dataIndexOfTestSuccess = (data).index('Test Run Successful.\n')
-    FormattedStreamLinedata = data[dataIndexOfTemperature:dataIndexOfTestSuccess-1]
-    print(FormattedStreamLinedata)
+       
+    while(i<(dataIndexOfTestSuccess-1)):
+        StreamLinedata.append(input())
+        i+=1
+    FormattedStreamLinedata = StreamLinedata[(dataIndexOfTemperature+1):(dataIndexOfTestSuccess-1)]
+    
+    dataIndexOfTemperature = (data).index('Temperature,SOC\n')
+    dataIndexOfTestSuccess = (data).index('Test Run Successful.\n')
+    FormattedStreamLinedata = data[dataIndexOfTemperature+1:dataIndexOfTestSuccess-1]
+    
     return FormattedStreamLinedata
     
 
