@@ -12,8 +12,8 @@ def Read_from_console():
     FormattedStreamLinedata = StreamLinedata[27:77]
     '''
     dataIndexOfTemperature = (data).index('Temperature,SOC\n')
-    lastdata = len(data)
-    FormattedStreamLinedata = data[dataIndexOfTemperature:lastdata-1]
+    dataIndexOfTestSuccess = (data).index('Test Run Successful\n')
+    FormattedStreamLinedata = data[dataIndexOfTemperature:dataIndexOfTestSuccess-1]
     print(FormattedStreamLinedata)
     return FormattedStreamLinedata
     
