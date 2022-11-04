@@ -1,6 +1,11 @@
 import sys
 import pandas as pd
 
+def ReadDatafindLength():
+    StreamLinedata = sys.stdin.readlines()
+    LengthOfStreamLinedata = len(StreamLinedata)
+    print(LengthOfStreamLinedata)
+    return LengthOfStreamLinedata
 
 def Read_from_console():
     i=0
