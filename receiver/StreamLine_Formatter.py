@@ -1,14 +1,15 @@
 import sys
 import pandas as pd
 
+
 def Read_from_console():
     i=0
-    data_1 = []
+    StreamLinedata = []
     while(i<77):
-        data_1.append(input())
+        StreamLinedata.append(input())
         i+=1
-    data_2 = data_1[27:77]
-    return data_2
+    FormattedStreamLinedata = StreamLinedata[27:77]
+    return FormattedStreamLinedata
     
 
 def StreamLineformat_console_pipeline(data):
