@@ -1,10 +1,13 @@
 def Read_from_console():
     i=0
     StreamLinedata = []
+    data = sys.stdin.readlines()
+    '''
     while(i<77):
         StreamLinedata.append(input())
         i+=1
     FormattedStreamLinedata = StreamLinedata[27:77]
+    '''
     return FormattedStreamLinedata
     
 
