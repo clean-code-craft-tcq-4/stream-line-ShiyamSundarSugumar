@@ -8,9 +8,9 @@ def Read_from_console():
     dataIndexOfTestSuccess = (StreamLinedata).index('Test Run Successful.\n')
        
     while(i<(dataIndexOfTestSuccess-1)):
-        StreamLinedata.append(input())
+        StreamLinedata_1.append(input())
         i+=1
-    FormattedStreamLinedata = StreamLinedata[(dataIndexOfTemperature+1):(dataIndexOfTestSuccess-1)]   
+    FormattedStreamLinedata = StreamLinedata_1[(dataIndexOfTemperature+1):(dataIndexOfTestSuccess-1)]   
     return FormattedStreamLinedata
     
 
