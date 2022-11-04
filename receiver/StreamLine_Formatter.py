@@ -2,8 +2,9 @@ import sys
 
 def Read_from_console():
     i=0
-    StreamLinedata = []
+    data = []
     data = sys.stdin.readlines()
+    print(data)
     '''
     while(i<77):
         StreamLinedata.append(input())
