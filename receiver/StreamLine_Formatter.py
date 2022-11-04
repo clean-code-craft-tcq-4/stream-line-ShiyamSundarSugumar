@@ -1,3 +1,5 @@
+import sys
+
 def Read_from_console():
     i=0
     StreamLinedata = []
