@@ -1,6 +1,12 @@
 import sys
 import pandas as pd
 
+def bms_format_console_pipeline():
+    data = sys.stdin.readlines()
+    input_data = ''
+    return data
+    print(data)
+    
 def findStreamLineLength(data):
     LengthOfStreamLinedata = len(Read_from_console())
     print(LengthOfStreamLinedata)
