@@ -20,13 +20,13 @@ def displayOutput(StreamLine_data):
         StreamLine_temperature_list = StreamLine_data[0]
         StreamLine_soc_list = StreamLine_data[1]
 
-        print('Max Temperature:', StreamLineReceiver_max(StreamLine_temperature_list))
-        print('Min Temperature:', StreamLineReceiver_min(StreamLine_temperature_list))
-        print('Moving average of last five values of temperature:', StreamLineReceiver_moving_average_last_5(StreamLine_temperature_list))
+        PrintOnConsole('Max Temperature:', StreamLineReceiver_max(StreamLine_temperature_list))
+        PrintOnConsole('Min Temperature:', StreamLineReceiver_min(StreamLine_temperature_list))
+        PrintOnConsole('Moving average of last five values of temperature:', StreamLineReceiver_moving_average_last_5(StreamLine_temperature_list))
 
-        print('Max SOC:', StreamLineReceiver_max(StreamLine_soc_list))
-        print('Min SOC:', StreamLineReceiver_min(StreamLine_soc_list))
-        print('Moving average of last five values of SOC:', StreamLineReceiver_moving_average_last_5(StreamLine_soc_list))
+        PrintOnConsole('Max SOC:', StreamLineReceiver_max(StreamLine_soc_list))
+        PrintOnConsole('Min SOC:', StreamLineReceiver_min(StreamLine_soc_list))
+        PrintOnConsole('Moving average of last five values of SOC:', StreamLineReceiver_moving_average_last_5(StreamLine_soc_list))
     return 'Success'
 
 # returns moving average of last 5 values in bms parameter list
@@ -39,7 +39,9 @@ def StreamLineReceiver_moving_average_last_5(StreamLine_data):
 
 def Pipeline_Data_Check():
     displayOutput(StreamLine_Formatter.StreamLineformat_console_pipeline(StreamLine_Formatter.Read_from_console()))
-    
+ 
+def PrintOnConsole(PrintData):
+    print(PrintData)
     
 if __name__ == '__main__':
     Pipeline_Data_Check()
