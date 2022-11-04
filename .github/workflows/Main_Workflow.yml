@@ -33,7 +33,7 @@ jobs:
       run: dotnet test
       
     - name: Run the app 
-      run: dotnet run -p Streamline_Sender.sln
+      run: dotnet run -p ./Streamline_Sender_TestCase/Streamline_Sender_TestCase.csproj
       
     - name: Run tests and collect coverage for Sender
       run: dotnet test ./Streamline_Sender_TestCase/Streamline_Sender_TestCase.csproj   --collect:"XPlat Code Coverage"
