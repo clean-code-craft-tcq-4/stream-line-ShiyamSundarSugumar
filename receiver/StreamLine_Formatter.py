@@ -2,8 +2,7 @@ import sys
 import pandas as pd
 
 def findStreamLineLength(data):
-    StreamLinedata = sys.stdin.readlines()
-    LengthOfStreamLinedata = len(StreamLinedata)
+    LengthOfStreamLinedata = len(Read_from_console())
     print(LengthOfStreamLinedata)
     return LengthOfStreamLinedata
 
@@ -28,7 +27,4 @@ def StreamLineformat_console_pipeline(data):
         i+=1    
     return [StreamLineReceiver_temperature_list,StreamLineReceiver_soc_list]
 
-if __name__ == "__main__":
-    sender_reading = sys.stdin.readlines()
-    findStreamLineLength(sender_reading)
-    
+   
