@@ -6,7 +6,9 @@ def ReadDatafindLength(data):
     LengthOfStreamLinedata = len(StreamLinedata)
     print(LengthOfStreamLinedata)
     return LengthOfStreamLinedata
+
 a = ReadDatafindLength(StreamLinedata)
+
 def Read_from_console():
     i=0
     StreamLinedata = []
