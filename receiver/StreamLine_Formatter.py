@@ -1,16 +1,17 @@
 import sys
 
 def Read_from_console():
-    i=0
-    data = []
-    data = sys.stdin.readlines()
-    dataIndexOfTemperature = (data).index('Temperature,SOC\n')
-    dataIndexOfTestSuccess = (data).index('Test Run Successful.\n')
-       
+    #i=0
+    StreamLinedata = []
+    StreamLinedata = sys.stdin.readlines()
+    dataIndexOfTemperature = (StreamLinedata).index('Temperature,SOC\n')
+    dataIndexOfTestSuccess = (StreamLinedata).index('Test Run Successful.\n')
+    '''   
     while(i<(dataIndexOfTestSuccess-1)):
         StreamLinedata = []
         StreamLinedata.append(input())
         i+=1
+    '''
     FormattedStreamLinedata = StreamLinedata[(dataIndexOfTemperature+1):(dataIndexOfTestSuccess-1)]   
     return FormattedStreamLinedata
     
